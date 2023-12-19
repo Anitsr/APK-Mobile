@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-69dp"
+        app:srcCompat="@drawable/rec" />
+
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="103dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="36dp"
+        app:srcCompat="@drawable/prof" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-235dp"
+        android:layout_marginLeft="30dp"
+        android:text="Pengaturan Profil"
+        android:textSize="20sp"
+        android:textColor="@color/font"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:id="@+id/kertasico"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="20dp"
+        android:onClick="logout"
+        app:srcCompat="@drawable/lgout"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-75dp"
+        android:layout_marginLeft="30dp"
+        android:text="Edit"
+        android:textSize="14sp"
+        android:textColor="@color/font"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="-75dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:id="@+id/ly1">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Nama"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Email"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="No. Telepon"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Tanggal lahir"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Alamat"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keluar"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:width="50dp"
+        android:textColor="@color/white"
+        android:textSize="12dp"
+        android:onClick="close"
+        android:layout_marginTop="625dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="675dp"
+        app:srcCompat="@drawable/navbar"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageView
+        android:id="@+id/homeico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="685dp"
+        app:srcCompat="@drawable/hum"
+        android:layout_marginLeft="20dp"
+        android:onClick="tohome"
+        />
+
+    <ImageView
+        android:id="@+id/cartico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="683dp"
+        app:srcCompat="@drawable/vector2"
+        android:layout_marginLeft="90dp"
+        android:onClick="toproduk"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="685dp"
+        app:srcCompat="@drawable/archiveadd"
+        android:layout_marginLeft="165dp"
+        android:onClick="tokate"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="685dp"
+        app:srcCompat="@drawable/bell"
+        android:layout_marginLeft="240dp"
+        android:onClick="tonotif"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="688dp"
+        app:srcCompat="@drawable/admin"
+        android:layout_marginLeft="310dp"
+        android:onClick="tosetting"
+        />
+
+</RelativeLayout>

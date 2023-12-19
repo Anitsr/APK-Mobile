@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/white"
+    android:backgroundTint="@color/bg">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-23dp"
+        app:srcCompat="@drawable/header" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/logo2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:id="@+id/ly1">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Username"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Password"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masuk"
+        android:layout_below="@id/ly1"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:width="300dp"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:onClick="tomenu"
+        />
+
+</RelativeLayout>
